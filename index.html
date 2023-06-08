@@ -28,7 +28,7 @@
 				<a href="#portfolio" class="icon solid fa-folder"><span>Portfolio</span></a>
 				<a href="#sketches" class="icon solid fa-envelope"><span>Sketches</span></a>
 				<a href="#about" class="icon solid fa-home"><span>About</span></a>
-				<a href="#resume" class="icon brands fa-twitter"><span>Twitter</span></a>
+				<a href="#resume" class="icon brands fa-twitter"><span>Resume</span></a>
 			</nav>
 
 			<!-- Main -->
@@ -42,11 +42,12 @@
 					<section>
 						<div class="row">
 
-							<a href="#" class="image fit"><img src="images/HojasConceptLuz3.png" alt=""></a>
+							
 							<a href="#" class="image fit"><img src="images/Ardillix1.png" alt=""></a>
 
 							<a href="#" class="image fit"><img src="images/Ardillix2.png" alt=""></a>
 
+							<a href="#" class="image fit"><img src="images/TheAntHillHojas.png" alt=""></a>
 							
 						    <!--<div class="col-4 col-6-medium col-12-small">
 								<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
@@ -118,11 +119,14 @@
 						<h1 style="color: snow">Javi Álvarez Pérez</h1>
 
 						<p>
+							<br />
 							Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
 							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 							luctus elit eget interdum.
 						</p>
 					</header>
+					<p> </p>
+
 					<!--<div align="center"><img src="images/yo.png" alt="" width="500" height="500"></div>-->
 					<div class="row">
 						<div class="col-6 col-12-medium">
@@ -139,52 +143,53 @@
 							</a>
 						</div>
 					</div>
-					
-					<p></p>
-					<p></p>
-					
+
+					<p><br /></p>
+					<p> </p>
 
 
-					<header>
-						<h2 style="color: snow" >Contact Me</h2>
-					</header>
-					<form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
-						<div>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<input type="text" name="name" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-medium">
-									<input type="text" id="email" name="email" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<input type="text" name="subject" placeholder="Subject" />
-								</div>
-								<div class="col-12">
-									<textarea name="message" placeholder="Message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<input type="submit" value="Send Message" />
-								</div>
-							</div>
-						</div>
-						<script src="https://smtpjs.com/v3/smtp.js"></script>
-						<script>
-							function sendEmail() {
-								Email.send({
-									Host: "smtp.gmail.com",
-									Username: "javier2002alvper@gmail.com",
-									Password: "10Jjpm1813",
-									To: 'javier2002alvper@gmail.com',
-									From: document.getElementById("email").value,
-									Subject: "This is the subject",
-									Body: "And this is the body"
-								}).then(
-									message => alert(message)
-								);
-							}
-						</script>
-					</form>
+
+
+
+					<!--<header>
+		<h2 style="color: snow" >Contact Me</h2>
+	</header>
+	<form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
+		<div>
+			<div class="row">
+				<div class="col-6 col-12-medium">
+					<input type="text" name="name" placeholder="Name" />
+				</div>
+				<div class="col-6 col-12-medium">
+					<input type="text" id="email" name="email" placeholder="Email" />
+				</div>
+				<div class="col-12">
+					<input type="text" name="subject" placeholder="Subject" />
+				</div>
+				<div class="col-12">
+					<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+				</div>
+				<div class="col-12">
+					<input type="submit" value="Send Message" />
+				</div>
+			</div>
+		</div>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			function sendEmail() {
+
+				Email.send({
+					SecureToken: "480060d5 - 33ea - 4f53 - adbc - 4c5859e5a3d0",
+					To: 'javier2002alvper@gmail.com',
+					From: document.getElementById("email").value,
+					Subject: "subject message",
+					Body: document.getElementById("message").value
+				}).then(
+					message => alert(message)
+				);
+			}
+		</script>
+	</form>-->
 
 				</article>
 
@@ -206,10 +211,11 @@
 
 			<!-- Footer -->
 			<div id="footer">
-				<a href="https://www.artstation.com/javi_alvarez" class="icon brands fa-twitter"><span>Artstation</span></a>
-				<a href="https://www.instagram.com/javi._.26/" class="icon brands fa-twitter"><span>Instagram</span></a>
-				<a href="https://twitter.com/javi__26" class="icon brands fa-twitter"><span>Twitter</span></a>
-				<p align="center" style="color: snow">javier2002alvper@gmail.com</p>
+				<a href="https://www.artstation.com/javi_alvarez"><span>Artstation</span></a>
+				<a href="https://www.instagram.com/javi._.26/"><span>Instagram</span></a>
+				<a href="https://twitter.com/javi__26"><span>Twitter</span></a>
+				<p align="center" style="color: snow">Contact me:</p>
+				<a href="mailto:javier2002alvper@gmail.com"><p align="center" style="color: snow">javier2002alvper@gmail.com</p></a>
 				<ul class="copyright">
 					<li>&copy; Untitled.</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

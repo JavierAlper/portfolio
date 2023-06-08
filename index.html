@@ -19,8 +19,9 @@
 
 			<!-- Nav -->
 			<header>
-				<h1>Javi Álvarez</h1>
-				<p align="center">Concept Artist</p>
+				<h1 style="color: snow" align="center">Javi Álvarez</h1>
+				<p align="center" style="color: snow">Concept Artist</p>
+				
 			</header>
 			<nav id="nav">
 
@@ -41,6 +42,7 @@
 					<section>
 						<div class="row">
 
+							<a href="#" class="image fit"><img src="images/HojasConceptLuz3.png" alt=""></a>
 							<a href="#" class="image fit"><img src="images/Ardillix1.png" alt=""></a>
 
 							<a href="#" class="image fit"><img src="images/Ardillix2.png" alt=""></a>
@@ -112,9 +114,9 @@
 				<!-- About -->
 				<article id="about" class="panel">
 					<header>
-						<a href ="#" class="image fit" width="500" height="500"><img src="images/yo.png" alt=""  align="right"></a>
+						<img src="images/yo.png" alt="" width="500" height="500" align="right">
 						<h1>Javi Álvarez Pérez</h1>
-						<p>Concept Artist</p>
+
 						<p>
 							Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
 							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
@@ -137,51 +139,54 @@
 							</a>
 						</div>
 					</div>
+					
+					<p></p>
+					<p></p>
+					
 
 
-                   
-                        <header>
-                            <h2>Contact Me</h2>
-                        </header>
-                        <form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
-                            <div>
-                                <div class="row">
-                                    <div class="col-6 col-12-medium">
-                                        <input type="text" name="name" placeholder="Name" />
-                                    </div>
-                                    <div class="col-6 col-12-medium">
-                                        <input type="text" id="email" name="email" placeholder="Email" />
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" name="subject" placeholder="Subject" />
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="submit" value="Send Message" />
-                                    </div>
-                                </div>
-                            </div>
-                            <script src="https://smtpjs.com/v3/smtp.js"></script>
-                            <script>
-                                function sendEmail() {
-                                    Email.send({
-                                        Host: "smtp.gmail.com",
-                                        Username: "javier2002alvper@gmail.com",
-                                        Password: "10Jjpm1813",
-                                        To: 'javier2002alvper@gmail.com',
-                                        From: document.getElementById("email").value,
-                                        Subject: "This is the subject",
-                                        Body: "And this is the body"
-                                    }).then(
-                                        message => alert(message)
-                                    );
-                                }
-                            </script>
-                        </form>
-                    
-</article>
+					<header>
+						<h2>Contact Me</h2>
+					</header>
+					<form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
+						<div>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<input type="text" name="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-medium">
+									<input type="text" id="email" name="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<input type="text" name="subject" placeholder="Subject" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" placeholder="Message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<input type="submit" value="Send Message" />
+								</div>
+							</div>
+						</div>
+						<script src="https://smtpjs.com/v3/smtp.js"></script>
+						<script>
+							function sendEmail() {
+								Email.send({
+									Host: "smtp.gmail.com",
+									Username: "javier2002alvper@gmail.com",
+									Password: "10Jjpm1813",
+									To: 'javier2002alvper@gmail.com',
+									From: document.getElementById("email").value,
+									Subject: "This is the subject",
+									Body: "And this is the body"
+								}).then(
+									message => alert(message)
+								);
+							}
+						</script>
+					</form>
+
+				</article>
 
 				<!-- Resume -->
 				<article id="resume" class="panel">
@@ -204,6 +209,7 @@
 				<a href="https://www.artstation.com/javi_alvarez" class="icon brands fa-twitter"><span>Artstation</span></a>
 				<a href="https://www.instagram.com/javi._.26/" class="icon brands fa-twitter"><span>Instagram</span></a>
 				<a href="https://twitter.com/javi__26" class="icon brands fa-twitter"><span>Twitter</span></a>
+				<p align="center" style="color: snow">javier2002alvper@gmail.com</p>
 				<ul class="copyright">
 					<li>&copy; Untitled.</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

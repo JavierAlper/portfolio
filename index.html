@@ -20,7 +20,7 @@
 			<!-- Nav -->
 			<header>
 				<h1>Javi Álvarez</h1>
-				<p>Concept Artist</p>
+				<p align="center">Concept Artist</p>
 			</header>
 			<nav id="nav">
 
@@ -37,11 +37,7 @@
 					<header>
 						<h2>Portfolio</h2>
 					</header>
-					<p>
-						Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-						luctus elit eget interdum.
-					</p>
+				
 					<section>
 						<div class="row">
 
@@ -116,47 +112,76 @@
 				<!-- About -->
 				<article id="about" class="panel">
 					<header>
+						<img src="images/yo.png" alt="" width="500" height="500" align="right">
 						<h1>Javi Álvarez Pérez</h1>
 						<p>Concept Artist</p>
+						<p>
+							Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
+							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+							luctus elit eget interdum.
+						</p>
 					</header>
-					<a href="#portfolio" class="jumplink pic">
+					<!--<div align="center"><img src="images/yo.png" alt="" width="500" height="500"></div>-->
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<a href="#portfolio">
+								<input type="submit" value="Portfolio" />
 
-						<span class="arrow icon solid fa-chevron-right"><span>My portfolio</span></span>
-
-
-					</a>
-					<a href="#resume" class="jumplink pic">
-
-
-						<span class="arrow icon solid fa-chevron-right"><span>My Resume</span></span>
-
-					</a>
-					<img src="images/me.jpg" alt="" />
-					<header>
-						<h2>Contact Me</h2>
-					</header>
-					<form action="#" method="post">
-						<div>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<input type="text" name="name" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-medium">
-									<input type="text" name="email" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<input type="text" name="subject" placeholder="Subject" />
-								</div>
-								<div class="col-12">
-									<textarea name="message" placeholder="Message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<input type="submit" value="Send Message" />
-								</div>
-							</div>
+							</a>
 						</div>
-					</form>
-				</article>
+						<div class="col-6 col-12-medium">
+							<a href="#resume">
+
+								<input type="submit" value="Resume" />
+
+							</a>
+						</div>
+					</div>
+
+
+                   
+                        <header>
+                            <h2>Contact Me</h2>
+                        </header>
+                        <form action="#" method="post" onsubmit="sendEmail(); reset(); return false;">
+                            <div>
+                                <div class="row">
+                                    <div class="col-6 col-12-medium">
+                                        <input type="text" name="name" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <input type="text" id="email" name="email" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="subject" placeholder="Subject" />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="submit" value="Send Message" />
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                            <script>
+                                function sendEmail() {
+                                    Email.send({
+                                        Host: "smtp.gmail.com",
+                                        Username: "javier2002alvper@gmail.com",
+                                        Password: "10Jjpm1813",
+                                        To: 'javier2002alvper@gmail.com',
+                                        From: document.getElementById("email").value,
+                                        Subject: "This is the subject",
+                                        Body: "And this is the body"
+                                    }).then(
+                                        message => alert(message)
+                                    );
+                                }
+                            </script>
+                        </form>
+                    
+</article>
 
 				<!-- Resume -->
 				<article id="resume" class="panel">

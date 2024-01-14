@@ -18,12 +18,15 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+	
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1305,8 +1308,9 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/fondo.png");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1529,6 +1533,7 @@ input, select, textarea {
 
 	header {
 		margin: 0 0 1.5em 0;
+
 	}
 
 		header > p {
@@ -1769,7 +1774,7 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
+	/*#nav {
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
@@ -1869,7 +1874,48 @@ input, select, textarea {
 				display: none;
 			}
 
+		}*/
+
+#nav {
+	text-align: center;
+	height: auto; /* Cambiado a 'auto' para que se ajuste al contenido */
+	cursor: default;
+
+}
+
+	#nav .row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	#nav a {
+		display: inline-block;
+		color: #ffffff;
+		font-size: 1.5em; /* Reducido el tamaño de la fuente */
+		margin: 0 10px; /* Espaciado entre enlaces */
+		opacity: 0.7;
+		text-decoration: none;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+		-ms-transition: opacity .25s ease-in-out;
+		transition: opacity .25s ease-in-out;
+	}
+
+		#nav a:hover {
+			opacity: 1.0;
 		}
+
+	#nav p {
+		margin: 0;
+	}
+
+@media screen and (max-width: 980px) {
+	#nav a {
+		font-size: 1.2em; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+	}
+}
 
 /* Wrapper */
 
@@ -2077,6 +2123,7 @@ input, select, textarea {
 					}
 
 				#main > .panel.intro header {
+
 					-moz-flex-grow: 1;
 					-webkit-flex-grow: 1;
 					-ms-flex-grow: 1;
@@ -2142,12 +2189,20 @@ input, select, textarea {
 
 /* Footer */
 
-	#footer {
-		color: rgba(255, 255, 255, 0.45);
-		text-align: center;
-		padding: 2em 0 0 0;
-		font-size: 0.75em;
-	}
+#footer {
+	color: rgba(255, 255, 255, 0.45);
+	text-align: center;
+	padding: 2em 0 0 0;
+	font-size: 0.75em;
+	position: relative;
+	background-image: url("images/overlay.png"), url('images/bg.jpg');
+	background-size: cover;
+	background-attachment: fixed; /* Fija la imagen de fondo mientras te desplazas por la página */
+	text-align: center;
+	color: #fff;
+	padding: 100px 0;
+	width: 100%; /* Abarca todo el ancho de la pantalla */
+}
 
 		#footer a {
 			color: #ddd;

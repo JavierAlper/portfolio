@@ -1906,6 +1906,13 @@ input, select, textarea {
 		#nav a:hover {
 			opacity: 1.0;
 		}
+			#nav a:hover span {
+				opacity: 1.0;
+			}
+
+		#nav a.active {
+			opacity: 1.0;
+		}
 
 	#nav p {
 		margin: 0;

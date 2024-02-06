@@ -1310,10 +1310,12 @@ input, select, textarea {
 
 
 	body {
+		position: relative;
 		background-image: url("images/overlay.png"), url("images/fondo.png");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
+		width: 100%;
 		overflow-y: scroll;
 	}
 

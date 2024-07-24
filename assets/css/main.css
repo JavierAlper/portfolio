@@ -1331,7 +1331,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -1588,26 +1588,33 @@ input, select, textarea {
 				width: auto;
 			}
 
+/* Estilo de imagen en la sección About */
+.about-img {
+	max-width: 100%; /* Asegura que la imagen no se desborde */
+	height: auto; /* Mantiene la proporción de la imagen */
+	display: block; /* Asegura que la imagen sea un bloque */
+	margin: 20px auto; /* Centra la imagen y agrega espacio arriba y abajo */
+}
 /* Button */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		-moz-transition: background-color .25s ease-in-out;
-		-webkit-transition: background-color .25s ease-in-out;
-		-ms-transition: background-color .25s ease-in-out;
-		transition: background-color .25s ease-in-out;
-		-webkit-appearance: none;
-		display: inline-block;
-		background-color: #d7a394;
-		color: #ffffff;
-		border: 0;
-		cursor: pointer;
-		outline: 0;
-		padding: 0.7em 1.5em 0.7em 1.5em;
-	}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+	-moz-transition: background-color .25s ease-in-out;
+	-webkit-transition: background-color .25s ease-in-out;
+	-ms-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
+	-webkit-appearance: none;
+	display: inline-block;
+	background-color: #63B156;
+	color: #ffffff;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	padding: 0.7em 1.5em 0.7em 1.5em;
+}
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
@@ -1686,6 +1693,14 @@ input, select, textarea {
 			}
 
 		}
+
+/* Contenedor de los botones */
+.button-container {
+	display: flex;
+	justify-content: center; /* Centra los botones horizontalmente */
+	gap: 60px; /* Espacio entre los botones */
+	margin-top: 20px; /* Espacio superior para los botones */
+}
 
 /* List */
 
@@ -2252,4 +2267,43 @@ input, select, textarea {
 				margin-left: 0.5em;
 			}
 
+		}
+
+
+/* Estilos adicionales para las imágenes responsivas */
+.panel img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto; /* Centra las imágenes en sus contenedores */
+}
+
+.panel {
+	padding: 20px;
+}
+
+	.panel section {
+		margin-bottom: 40px;
+	}
+
+	.panel .row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.panel .row div {
+			flex: 1 1 100%;
+			text-align: center;
+		}
+
+		.panel .row img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+
+		.panel .row h2 {
+			margin-top: 0;
 		}

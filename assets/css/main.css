@@ -2286,15 +2286,15 @@ button,
 		margin-bottom: 40px;
 	}
 
-	.panel .row {
+	/*.panel .row {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
+		gap: 10px; /* Espacio entre columnas 
+		justify-content: start; /* Alinea las columnas al inicio 
+	}*/
 
 		.panel .row div {
-			flex: 1 1 100%;
+			/* Elimina flex: 1 1 100% para que se respeten los anchos de .col-4, .col-6-medium, .col-12 */
 			text-align: center;
 		}
 

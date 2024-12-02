@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
@@ -35,7 +36,36 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+/* NUEVAS FUENTES */
 
+.parkinsans-title {
+	font-family: "Parkinsans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800; /* Peso negrita */
+	font-style: normal;
+}
+
+.parkinsans-subtitle {
+	font-family: "Parkinsans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600; /* Peso negrita */
+	font-style: normal;
+}
+
+.parkinsans-paragraph {
+	font-family: "Parkinsans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400; /* Peso más ligero */
+	font-style: normal;
+}
+
+.parkinsans-small {
+	font-family: "Parkinsans", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 35px;
+	font-weight: 400; /* Peso más ligero */
+	font-style: normal;
+}
 ol, ul {
 	list-style: none;
 }
@@ -2307,6 +2337,8 @@ button,
 		.panel .row h2 {
 			margin-top: 0;
 		}
+
+
 /* VIdeos */
 /* Asegúrate de que el contenedor ocupe el ancho completo y esté centrado */
 .video-container {

@@ -61,10 +61,10 @@ body {
 
 .parkinsans-small {
 	font-family: "Parkinsans", sans-serif;
-	font-optical-sizing: auto;
-	font-size: 35px;
-	font-weight: 400; /* Peso más ligero */
-	font-style: normal;
+    font-optical-sizing: auto;
+    font-size: clamp(16px, 2vw, 35px); /* Ajusta entre un mínimo de 16px y un máximo de 35px */
+    font-weight: 400; /* Peso más ligero */
+    font-style: normal;
 }
 ol, ul {
 	list-style: none;

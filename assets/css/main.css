@@ -55,15 +55,15 @@ body {
 .parkinsans-paragraph {
 	font-family: "Parkinsans", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 400; /* Peso más ligero */
+	font-weight: 400; /* Peso mï¿½s ligero */
 	font-style: normal;
 }
 
 .parkinsans-small {
 	font-family: "Parkinsans", sans-serif;
     font-optical-sizing: auto;
-    font-size: clamp(16px, 2vw, 35px); /* Ajusta entre un mínimo de 16px y un máximo de 35px */
-    font-weight: 400; /* Peso más ligero */
+    font-size: clamp(16px, 2vw, 35px); /* Ajusta entre un mï¿½nimo de 16px y un mï¿½ximo de 35px */
+    font-weight: 400; /* Peso mï¿½s ligero */
     font-style: normal;
 }
 ol, ul {
@@ -1618,13 +1618,15 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* Estilo de imagen en la sección About */
+/* Estilo de imagen en la secciï¿½n About */
 .about-img {
 	max-width: 100%; /* Asegura que la imagen no se desborde */
-	height: auto; /* Mantiene la proporción de la imagen */
+	height: auto; /* Mantiene la proporciï¿½n de la imagen */
 	display: block; /* Asegura que la imagen sea un bloque */
+	border-radius: 30px; /* Ajusta el radio de redondeo */
 	margin: 20px auto; /* Centra la imagen y agrega espacio arriba y abajo */
 }
+
 /* Button */
 
 input[type="button"],
@@ -1940,7 +1942,7 @@ button,
 	#nav a {
 		display: inline-block;
 		color: #ffffff;
-		font-size: 1.5em; /* Reducido el tamaño de la fuente */
+		font-size: 1.5em; /* Reducido el tamaï¿½o de la fuente */
 		margin: 0 10px; /* Espaciado entre enlaces */
 		opacity: 0.7;
 		text-decoration: none;
@@ -1967,7 +1969,7 @@ button,
 
 @media screen and (max-width: 980px) {
 	#nav a {
-		font-size: 1.2em; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+		font-size: 1.2em; /* Ajusta el tamaï¿½o de la fuente para pantallas mï¿½s pequeï¿½as */
 	}
 }
 
@@ -2251,7 +2253,7 @@ button,
 	position: relative;
 	background-image: url("images/overlay.png"), url('images/bg.jpg');
 	background-size: cover;
-	background-attachment: fixed; /* Fija la imagen de fondo mientras te desplazas por la página */
+	background-attachment: fixed; /* Fija la imagen de fondo mientras te desplazas por la pï¿½gina */
 	text-align: center;
 	color: #fff;
 	padding: 100px 0;
@@ -2300,12 +2302,12 @@ button,
 		}
 
 
-/* Estilos adicionales para las imágenes responsivas */
+/* Estilos adicionales para las imï¿½genes responsivas */
 .panel img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	margin: 0 auto; /* Centra las imágenes en sus contenedores */
+	margin: 0 auto; /* Centra las imï¿½genes en sus contenedores */
 }
 
 .panel {
@@ -2340,23 +2342,23 @@ button,
 
 
 /* VIdeos */
-/* Asegúrate de que el contenedor ocupe el ancho completo y esté centrado */
+/* Asegï¿½rate de que el contenedor ocupe el ancho completo y estï¿½ centrado */
 .video-container {
 	position: relative;
-	padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura en % respecto al ancho) */
+	padding-bottom: 56.25%; /* Relaciï¿½n de aspecto 16:9 (altura en % respecto al ancho) */
 	height: 0;
 	overflow: hidden;
 	max-width: 100%;
-	margin: 0 auto; /* Centra el contenedor en la página */
+	margin: 0 auto; /* Centra el contenedor en la pï¿½gina */
 	background: #000; /* Fondo negro opcional para el contenedor */
 }
 
-	/* Asegúrate de que el video ocupe todo el contenedor */
+	/* Asegï¿½rate de que el video ocupe todo el contenedor */
 	.video-container video {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
+		object-fit: cover; /* Mantiene la relaciï¿½n de aspecto y cubre el contenedor */
 	}
